@@ -30,4 +30,6 @@ docker-compose down
 # To edit the files please use the volume created 
 volumes: ['./:/usr/src/app']
 
+# To get a bash shell in the container
+docker exec -it docker-node-mongo /bin/bash
 ```

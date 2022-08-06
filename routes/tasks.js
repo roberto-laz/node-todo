@@ -1,4 +1,4 @@
-const Task = require("..models/task");
+const Task = require("../models/task");
 const express = require("express");
 const router = express.Router();
 
@@ -35,7 +35,7 @@ router.put("/:id", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   try {
-    const task = await Task.findByIdAndDelte(req.params.id);
+    const task = await Task.findByIdAndDelete(req.params.id);
     res.send(task);
   } catch (error) {
     res.send(error);
