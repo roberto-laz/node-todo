@@ -21,5 +21,7 @@ app.use(cors());
 
 app.use('/api/tasks', tasks);
 
+console.log('banana');
+
 const port = process.env.PORT || 3000;
 app.listen(port, ()=> console.log(`Listening on ${port}`));
